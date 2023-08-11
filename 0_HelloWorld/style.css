@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: green;
+    font-family: Verdana;
+}
+
+img {
+    border-radius: 20px;
+}
+
+span {
+    padding: 40px;
+}
