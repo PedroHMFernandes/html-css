@@ -20,6 +20,9 @@ body {
 }
 
 .apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 615px;
     height: 482px;
 }
@@ -39,6 +42,11 @@ body {
     color: #22D4FD;
 }
 
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
 .botao {
     background-color: #22D4FD;
     border-radius: 16px;
@@ -54,4 +62,6 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: #000;
+    width: 280px;
+    height: 79px;
 }
