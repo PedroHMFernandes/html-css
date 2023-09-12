@@ -1,119 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
 :root {
-    --cor-primaria: #000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22d4fd;
+  --cor-primaria: #000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
 
-    --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+
+  --tamanho-fonte-titulo: 2.25rem; /*36px*/
+  --tamanho-fonte-conteudo: 1.5rem; /*24px*/
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    /* height: 100vh; */
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria)
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 
 .cabecalho {
-    padding: 2% 0 0 15%
+  padding: 2% 0 0 15%;
 }
 
 .cabecalho__menu {
-    display: flex;
-    gap: 80px;
+  display: flex;
+  gap: 80px;
 }
 
 .cabecalho__menu__botao {
-    font-style: normal;
-    font-size: 24px;
-    font-family: var(--fonte-secundaria);
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
+  font-style: normal;
+  font-size: var(--tamanho-fonte-conteudo);
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none;
 }
 
 .cabecalho__menu__botao:hover {
-    color: #7be7ff;
+  color: #7be7ff;
 }
 
 .apresentacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6% 15%;
+  gap: 82px;
 }
 
 .apresentacao__conteudo {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 593px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
 }
 
 .apresentacao__conteudo__titulo {
-    font-family: var(--fonte-primaria);
-    font-size: 36px;
+  font-family: var(--fonte-primaria);
+  font-size: var(--tamanho-fonte-titulo);
 }
 
 .texto_destaque {
-    color: var(--cor-terciaria);
+  color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-family: var(--fonte-secundaria);
-    font-size: 24px;
+  font-family: var(--fonte-secundaria);
+  font-size: var(--tamanho-fonte-conteudo);
 }
 
 .apresentacao__links {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
 
 .apresentacao__links_subtitulo {
-    font-family: var(--fonte-primaria);
-    font-size: 24px;
-    line-height: 40px;
-    font-weight: 400;
+  font-family: var(--fonte-primaria);
+  font-size: var(--tamanho-fonte-conteudo);
+  line-height: 40px;
+  font-weight: 400;
 }
 
-
 .apresentacao__links_botao {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    font-size: 24px;
-    font-family: var(--fonte-secundaria);
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    color: var(--cor-secundaria);
-    padding: 16px 0;
-    border: 2px solid var(--cor-terciaria);
-    border-radius: 8px;
-    width: 378px;
-
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  font-size: var(--tamanho-fonte-conteudo);
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: var(--cor-secundaria);
+  padding: 16px 0;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 8px;
+  width: 55%;
 }
 
 .apresentacao__links_botao:hover {
-    background-color: #272727;
-    color: var(--cor-terciaria);
+  background-color: #272727;
+  color: var(--cor-terciaria);
+}
+
+.apresentacao__imagem {
+  width: 50%;
 }
 
 .rodape {
-    padding: 24px;
-    background-color: var(--cor-terciaria);
-    color: var(--cor-primaria);
-    font-size: 24px;
-    font-family: var(--fonte-secundaria);
-    font-weight: 400;
-    text-align: center;
+  padding: 24px;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  font-size: var(--tamanho-fonte-conteudo);
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .apresentacao {
+    flex-direction: column-reverse;
+  }
+
+  .cabecalho {
+    padding: 6%;
+  }
+  .cabecalho__menu {
+    justify-content: center;
+  }
 }
