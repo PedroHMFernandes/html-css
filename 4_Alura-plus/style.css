@@ -25,20 +25,36 @@ body {
   background-image: url("images/Background.png");
   background-repeat: no-repeat;
   background-size: contain;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
   height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
-  text-align: center;
 }
-.container__titulo {
+
+.container__caixa {
+  margin: 0 6rem;
+}
+
+.container__subtitulo {
   font-weight: 700;
   font-size: 1.75rem;
 }
 
+.container__imagem {
+  margin: 1.4rem 0 3.4rem 0;
+}
+
 .container__botao {
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--branco-principal);
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .botao-azul {
@@ -49,15 +65,26 @@ body {
   border: 1px solid var(--branco-principal);
 }
 
-.botao {
-  text-decoration: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  color: var(--branco-principal);
-  display: block;
-}
-
 .container__aviso {
   color: var(--cinza-principal);
   font-size: 0.75rem;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.descricao__texto {
+  color: var(--branco-secundario);
+  font-size: 1rem;
+  opacity: 0.8;
 }
