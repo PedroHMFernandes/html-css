@@ -54,15 +54,19 @@ body {
   border-radius: 0.5rem;
   color: var(--branco-principal);
   display: block;
-  margin-bottom: 1rem;
 }
 
+.container__descricao {
+  padding: 3rem;
+}
 .botao-azul {
   background-color: var(--azul-botao);
+  margin-bottom: 1rem;
 }
 
 .botao-transparente {
   border: 1px solid var(--branco-principal);
+  margin-bottom: 0.63rem;
 }
 
 .container__aviso {
@@ -78,6 +82,12 @@ body {
 .secundario__imagem {
   width: 80%;
 }
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
 .descricao__titulo {
   font-weight: 700;
   font-size: 3rem;
@@ -87,4 +97,52 @@ body {
   color: var(--branco-secundario);
   font-size: 1rem;
   opacity: 0.8;
+}
+
+.dispositivos {
+  text-align: center;
+  margin: 0 10rem;
+  margin-bottom: 14rem;
+}
+
+.dispositivos__titulo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.dispositivos__lista {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-top: 2.5rem;
+}
+
+.lista__item {
+  font-size: 2rem;
+}
+
+.rodape {
+  text-align: center;
+  margin: 0 10rem;
+}
+
+.rodape__imagem {
+  margin-bottom: 2.5rem;
+}
+
+.rodape__nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav__links {
+  color: var(--branco-principal);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.infos__texto {
+  color: var(--cinza-principal);
+  margin-bottom: 1.5rem;
 }
