@@ -146,3 +146,40 @@ body {
   color: var(--cinza-principal);
   margin-bottom: 1.5rem;
 }
+
+@media only screen and (max-width: 768px){
+  .principal{
+    background-image: none;
+    margin: 0 2rem;
+  }
+
+  .container{ 
+    display: block;
+    text-align: center;
+    height: 95vh;
+  }
+  .container__caixa{
+    margin: 0;
+  }
+
+  .principal{
+    align-items: center;
+    margin-top: 25%;
+  }
+
+  .secundario{
+    margin: 0 2rem;
+  }
+
+  .dispositivos{
+    margin: 0 2rem;
+  }
+  .dispositivos__lista{
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .rodape{
+    margin: 1rem 2rem;
+  }
+}
