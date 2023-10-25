@@ -1,11 +1,14 @@
 @import url("./header.css");
 @import url("./banner.css");
 @import url("./carrossel.css");
+@import url("./card.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
 :root {
   --cor-de-fundo: #ebecee;
   --cor-destaque: #eb9b00;
+  --cor-destaque-2: #002f52;
+  --cor-texto-cards: rgba(0, 0, 0, 0.85);
   --azul-gradiente: linear-gradient(98deg, #002f52 35.49%, #326589 165.37%);
 }
 
