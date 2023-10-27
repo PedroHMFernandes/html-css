@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
@@ -45,11 +46,15 @@
             <a href="#"><img src="assets/images/Usuario.svg" alt="Ícone de usuário"></a>
         </div>
     </header>
+
+    <!-- Banner -->
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que preca para seu desenvolvimento</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <!-- 1º Carrossel -->
     <section class="carrossel">
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
         <!-- Slider main container -->
@@ -76,6 +81,8 @@
             <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </section>
+
+    <!-- 1º Card -->
     <section class="card">
         <div class="card__descricao">
             <div class="descricao">
@@ -94,6 +101,8 @@
             <a href="#" class="botoes_saibamais">Saiba mais</a>
         </div>
     </section>
+
+    <!-- 2º Carrosel -->
     <section class="carrossel">
         <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
         <!-- Slider main container -->
@@ -120,6 +129,8 @@
             <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </section>
+
+    <!-- 2º Card -->
     <section class="card">
         <div class="card__descricao">
             <div class="descricao">
@@ -139,18 +150,50 @@
             <a href="#" class="botoes_saibamais">Saiba mais</a>
         </div>
     </section>
-    <section class="topicos">
 
+    <!-- Tópicos -->
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">HTML & CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Java</a>
+            </li>
+        </ul>
     </section>
 
+    <!-- Contatos -->
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <h3 class="contato__subtitulo">Atualizações de e-books, novos livros, promoções e outros.</h3>
+        <input type="email" class="contato_email" placeholder="Cadastre seu email">
+    </section>
 
-
-
-
-
-
-
-
+    <!-- Rodapé -->
+    <hr>
+    <footer class="rodape">
+        <p class="rodape__texto">Grupo Alura</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
