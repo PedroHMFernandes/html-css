@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
 .cabecalho {
   background-color: #ffffff;
   padding: 1.1rem 1.5rem;
@@ -33,11 +35,11 @@
 .lista-menu {
   display: none;
   position: absolute;
-  background-color: #ffffff;
   top: 100%;
+  width: 60vw;
   left: 0;
   padding: 0 0 0 1.5rem;
-  width: 60vw;
+  background-color: #ffffff;
 }
 
 .lista-menu__titulo {
@@ -57,4 +59,57 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.container__titulo {
+  display: none;
+}
+
+.opcoes {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__titulo {
+    display: block;
+    color: #000;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.875rem;
+  }
+  .container__titulo-negrito {
+    font-weight: 700;
+  }
+
+  .opcoes {
+    font-weight: 400;
+    display: flex;
+    color: #000;
+  }
+  .opcoes__item {
+    padding: 0 1.3rem;
+  }
+  .opcoes__link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .opcoes__botao {
+    display: none;
+  }
+
+  .opcoes__botao:checked ~ .lista-menu {
+    display: block;
+    width: auto;
+    left: auto;
+    padding: 0 1rem;
+  }
+
+  .cabecalho__menu-hamburger {
+    display: none;
+  }
+
+  #favorito {
+    display: none;
+  }
 }
