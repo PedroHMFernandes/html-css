@@ -17,7 +17,7 @@ hr {
 
 .listas {
   display: none;
-  gap:3.8125rem
+  gap: 3.8125rem;
 }
 
 .lista__item {
@@ -43,12 +43,27 @@ hr {
   text-decoration: none;
 }
 
-@media screen and (min-width:1024px) {
-  .rodape__texto{
+@media screen and (min-width: 1024px) {
+  .rodape {
+    justify-content: space-evenly;
+  }
+
+  .rodape__texto {
     font-size: 1.5rem;
   }
 
-  .listas{
-    display: flex ;
+  .listas {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .rodape__lista {
+    border-left: solid 1px #858585;
+    padding-left: 1.5rem;
+  }
+
+  .rodape {
+    padding: 4rem 6rem;
   }
 }
