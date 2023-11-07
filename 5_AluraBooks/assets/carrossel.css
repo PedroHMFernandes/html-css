@@ -41,3 +41,23 @@
     top: 60%;
   }
 }
+@media screen and (min-width: 1728px) {
+  .carrossel__titulo {
+    padding: 2.5rem 0 1rem 0;
+  }
+
+  .carrossel__container {
+    padding: 2rem 0;
+    display: flex;
+    margin: 0 20vw 3em 20vw;
+    gap: 4rem;
+    align-items: flex-end;
+  }
+
+  .swiper {
+    width: 65%;
+  }
+  .swiper-pagination {
+    margin: 1rem 0;
+  }
+}
