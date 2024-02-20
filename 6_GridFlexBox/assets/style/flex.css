@@ -39,8 +39,8 @@
 .rodape {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  row-gap: 1rem;
+  justify-content: space-between;
 }
 
 .rodape__logo {
@@ -60,10 +60,6 @@
   .eventos__lista,
   .agenda__lista {
     justify-content: flex-end;
-  }
-
-  .rodape {
-    justify-content: space-between;
   }
 }
 
